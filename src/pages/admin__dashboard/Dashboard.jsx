@@ -1,6 +1,6 @@
-import React from 'react';
 import { dashboardStats } from '../../database/mockData';
-function Dashboard() {
+
+const Dashboard = () => {
   return (
     <div>
       <h1>대시보드</h1>
@@ -18,6 +18,6 @@ function Dashboard() {
       </div>
     </div>
   );
-}
+};
 
 export default Dashboard;

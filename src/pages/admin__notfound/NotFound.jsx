@@ -1,7 +1,6 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 
-function NotFound() {
+const NotFound = () => {
   return (
     <div className="not-found">
       <h1>404 - 잘못된 페이지 요청</h1>
@@ -9,6 +8,6 @@ function NotFound() {
       <Link to="/admin">대시보드로 돌아가기</Link>
     </div>
   );
-}
+};
 
 export default NotFound;

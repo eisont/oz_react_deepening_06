@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getUserDetail } from '../../database/mockData';
 
-function UserDetail() {
+const UserDetail = () => {
   const { id } = useParams();
   const [user, setUser] = useState(null);
 
@@ -34,6 +34,6 @@ function UserDetail() {
       </div>
     </div>
   );
-}
+};
 
 export default UserDetail;

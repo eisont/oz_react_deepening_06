@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { adminSettings } from '../../database/mockData';
 
-function Settings() {
+const Settings = () => {
   const [settings, setSettings] = useState(adminSettings);
 
   const handleChangeTheme = () => {
@@ -64,6 +64,6 @@ function Settings() {
       </div>
     </div>
   );
-}
+};
 
 export default Settings;
